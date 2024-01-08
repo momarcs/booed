@@ -1,0 +1,118 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Boo World",
+    "dateExported": "2024-01-07T18:17:43.244Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f153ed48-503e-4850-b1a8-83c3f9e4d71b",
+            "colId": "1f58c6ca-8769-4218-a748-e484007a609c",
+            "containerId": "",
+            "name": "Add Comment",
+            "url": "http://localhost:3000/comment",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-01-07T07:34:10.788Z",
+            "modified": "2024-01-07T07:34:10.788Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {\r\n    \"profile_id\": \"65995c61b4557da675133bcd\",\r\n    \"comment\": \"comment all 5 likes...\",\r\n    \"personality_types\": [\r\n       {\r\n         \"type\": \"mbti\",\r\n         \"value\": \"infp\"\r\n       },\r\n       {\r\n         \"type\": \"enneagram\",\r\n          \"value\": \"6w4\"\r\n       },\r\n       {\r\n         \"type\": \"zodiac\",\r\n          \"value\": \"pices\"\r\n       }\r\n      ],\r\n     \"likes\": 5\r\n }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "67195d28-6071-4edb-9671-8c3940fa4940",
+            "colId": "1f58c6ca-8769-4218-a748-e484007a609c",
+            "containerId": "",
+            "name": "Add User/Profile",
+            "url": "http://localhost:3000/profile",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-07T07:37:59.898Z",
+            "modified": "2024-01-07T07:37:59.899Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"name\": \"Roger Fredrick\",\r\n    \"description\": \"Hi, good to meet with you! how you doin?\",\r\n    \"mbti\": \"ESTP\",\r\n    \"enneagram\": \"6w1\",\r\n    \"variant\": \"asp/dsp\",\r\n    \"tritype\": 300,\r\n    \"socionics\": \"SAW\",\r\n    \"sloan\": \"RACCON\",\r\n    \"psyche\": \"HYPE\",\r\n    \"image\": \"https://soulverse.boo.world/images/1.png\"\r\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "61b9f96e-7801-4c92-8344-22256feed1b9",
+            "colId": "1f58c6ca-8769-4218-a748-e484007a609c",
+            "containerId": "",
+            "name": "All Users/Profiles",
+            "url": "http://localhost:3000/users",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-01-07T07:41:04.019Z",
+            "modified": "2024-01-07T07:41:04.019Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "61b2a362-211c-47f2-b4fc-5b3b839044d2",
+            "colId": "1f58c6ca-8769-4218-a748-e484007a609c",
+            "containerId": "",
+            "name": "Get Comments By Profile Id",
+            "url": "http://localhost:3000/comments",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-01-07T08:18:53.824Z",
+            "modified": "2024-01-07T18:10:24.110Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {\n    \"profile_id\": \"65995c61b4557da675133bcd\",\n    \"type\": \"zodiac\"\n }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6c722501-afac-4e3c-8a22-f8557c639dcb",
+            "colId": "1f58c6ca-8769-4218-a748-e484007a609c",
+            "containerId": "",
+            "name": "Like Comment",
+            "url": "http://localhost:3000/like",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-01-07T08:39:23.079Z",
+            "modified": "2024-01-07T08:39:23.079Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {\r\n    \"comment_id\": \"659984b2c5650e35e4462bf6\"\r\n }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8e71498e-94e6-4401-9b45-0a522c73532b",
+            "colId": "1f58c6ca-8769-4218-a748-e484007a609c",
+            "containerId": "",
+            "name": "Unlike Comment",
+            "url": "http://localhost:3000/unlike",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-01-07T08:42:57.981Z",
+            "modified": "2024-01-07T08:42:57.981Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {\r\n    \"comment_id\": \"659984b2c5650e35e4462bf6\"\r\n }",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
